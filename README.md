@@ -47,3 +47,5 @@ The tables that are worth keeping for the SQL database are: `actor`, `film`, `in
 On the other side, `language` will be useful if `film` had no repeated values in the `language_id` column. I don't believe there's something that can be done about it with just data cleaning and transformation, so I'm going to drop it.
 
 ## [3-Data Cleaning 🧹](#3-data-cleaning-)
+
+I did a general cleaning of all of the tables mentioned before and then I modified the old_HDD to be the `actor_film` table, serving as a many-to-many table for the two of them. I also used the `category` of that table to include it into the `film` table and have each film with its category.
