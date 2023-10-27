@@ -4,11 +4,17 @@
 
 Iron Hack's week 3 project.
 
+## Index
+
+* [Introduction] (#Introduction)
+
 ## Introduction 🎞
 
 A delusional man, in 2023 A.D., has decided to re-open Blockbuster. This is not a great idea, but he's paying us, so we have to obey.
 
 He says that he has recover some Blockbuster's data from back in the day and he wants us to clean the data and export it into a database. He's no programmer so he's trusting our criteria as long as it is a SQL database (his brother-in-law told him about it and he believes is the next big thing).
+
+
 
 ## 0-Problem Instructions 🗒
 
@@ -23,4 +29,4 @@ The problem is divided into 4 parts and a bonus:
 
 Let's get into it!
 
-## 1-Data Exploration 🧹
+## 1-Data Exploration 🔍
