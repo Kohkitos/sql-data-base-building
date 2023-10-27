@@ -62,3 +62,9 @@ This has the relationships of each actor with each film. I have to check later w
 ### g. Rental
 
 No nulls, no repeated ids. There is `staff_id` column with just two values, 1 and 2, like the store ids in invengory, they may be related.
+
+### z. Conclusions
+
+The tables that are worth keeping for the SQL database are: `actor`, `category`, `film`, `inventory` and `rental`. `old_HDD` will help us relate `film` and `actor` and `language` will be useful if `film` had no repeated values in the `language_id` column. I'll try to do something about it but in the end I think dropping it will be the best option.
+
+## 3-Data Cleaning 🧹
