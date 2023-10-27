@@ -4,10 +4,6 @@
 
 Iron Hack's week 3 project.
 
-## Index
-
-* [Introduction] (#Introduction)
-
 ## Introduction 🎞
 
 A delusional man, in 2023 A.D., has decided to re-open Blockbuster. This is not a great idea, but he's paying us, so we have to obey.
