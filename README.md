@@ -4,14 +4,22 @@
 
 Iron Hack's week 3 project.
 
-## Introduction 🎞
+## Index
++ [Introduction 🎞](#introduction-)
++ [0-Contents](#0-contents)
++ [1-Problem Instructions 📝](#1-problem-instructions-)
++ [2-Data Exploration 🔍](#2-data-exploration-)
++ [3-Data Cleaning 🧹](#3-data-cleaning-)
 
-A delusional man, in 2023 A.D., has decided to re-open Blockbuster. This is not a great idea, but he's paying us, so we have to obey.
 
-He says that he has recover some Blockbuster's data from back in the day and he wants us to clean the data and export it into a database. He's no programmer so he's trusting our criteria as long as it is a SQL database (his brother-in-law told him about it and he believes is the next big thing).
+## [Introduction 🎞](#introduction-)
+
+A delusional man named Deli Ushion, in 2023 A.D., has decided to re-open Blockbuster. This is not a great idea, but he's paying us, so we have to obey.
+
+Deli says that he has recover some Blockbuster's data from back in the day and he wants us to clean the data and export it into a database. He's no programmer so he's trusting our criteria as long as it is a SQL database (his brother-in-law, Manuel, told him about it and he believes is the next big thing).
 
 
-## 0-Contents
+## [0-Contents](#0-contents)
 
 + `src`: a hidden directory with the source database.
 + `img`: folder with the images used in the readme.
@@ -19,7 +27,7 @@ He says that he has recover some Blockbuster's data from back in the day and he 
 
 **This readme only contains the conclussions, the process is explained in the notebooks**
 
-## 1-Problem Instructions 📝
+## [1-Problem Instructions 📝](#1-problem-instructions-)
 
 The problem is divided into 4 parts and a bonus:
 
@@ -32,10 +40,10 @@ The problem is divided into 4 parts and a bonus:
 
 Let's get into it!
 
-## 2-Data Exploration 🔍
+## [2-Data Exploration 🔍](#2-data-exploration-)
 
 The tables that are worth keeping for the SQL database are: `actor`, `film`, `inventory` and `rental`. `old_HDD`, when transformed, will help us relate `film`, `category` and `actor`.
 
 On the other side, `language` will be useful if `film` had no repeated values in the `language_id` column. I don't believe there's something that can be done about it with just data cleaning and transformation, so I'm going to drop it.
 
-## 3-Data Cleaning 🧹
+## [3-Data Cleaning 🧹](#3-data-cleaning-)
