@@ -17,9 +17,9 @@ He says that he has recover some Blockbuster's data from back in the day and he 
 + `img`: folder with the images used in the readme.
 + `notebooks`: all the notebooks used in the project.
 
-**All the explanations in this readme will be more developed on the notebooks**
+**This readme only contains the conclussions, the process is explained in the notebooks**
 
-## 1-Problem Instructions 🗒
+## 1-Problem Instructions 📝
 
 The problem is divided into 4 parts and a bonus:
 
