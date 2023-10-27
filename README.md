@@ -1,4 +1,4 @@
-[!cover] (https://github.com/Kohkitos/sql-data-base-building/blob/main/img/cover.jpg)
+![cover](https://github.com/Kohkitos/sql-data-base-building/blob/main/img/cover.jpg)
 
 # Database Building with SQL
 
