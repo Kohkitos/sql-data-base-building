@@ -5,3 +5,4 @@ notebooks/.ipynb_checkpoints
 
 notebooks/passwords.py
 notebooks/__pycache__
+__pycache__/
