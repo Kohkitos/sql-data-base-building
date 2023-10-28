@@ -10,6 +10,7 @@ Iron Hack's week 3 project.
 1. [Problem Instructions 📝](#problem-instructions-)
 1. [Data Exploration 🔍](#data-exploration-)
 1. [Data Cleaning 🧹](#data-cleaning-)
+1. [Building a Database 👷‍♂️](#building-database-)
 
 
 ## [Introduction 🎞](#introduction-)
@@ -50,3 +51,9 @@ On the other side, `language` would have been useful if `film` had no repeated v
 ## [Data Cleaning 🧹](#data-cleaning-)
 
 I did a general cleaning of all of the tables mentioned before and then I modified the old_HDD to be the `actor_film` table, serving as a many-to-many table for the two of them. I also used the `category` of that table to include it into the `film` table and have each film with its category.
+
+## [Building a Database 👷‍♂️](#building-database-)
+
+The database created was the following:
+
+![database](https://github.com/Kohkitos/sql-data-base-building/blob/main/img/database.jpg)
