@@ -35,7 +35,7 @@ The problem is divided into 4 parts and a bonus:
 1. Explore the data and write down what you have found
    - you can use: `df.describe()`, `df["column"]`, etc.
 1. Clean the data (you can get rid of columns that doesn't give information)
-1. Build your databse
+1. Build your database
 1. Write at least 10 queries including: join, groupby, orderby, where, subqueries….that you think will be useful to get interesting insights from the data.**(SELECT* FROM TABLE_NAME doesn't count...)**
 + Bonus: Get creative!!! Create totally new tables or enrich the csv files with new data (found on the internet or even made up) that makes your database more valuable.
 
@@ -45,7 +45,7 @@ Let's get into it!
 
 The tables that are worth keeping for the SQL database are: `actor`, `film`, `inventory` and `rental`. `old_HDD`, when transformed, will help us relate `film`, `category` and `actor`.
 
-On the other side, `language` will be useful if `film` had no repeated values in the `language_id` column. I don't believe there's something that can be done about it with just data cleaning and transformation, so I'm going to drop it.
+On the other side, `language` would have been useful if `film` had no repeated values in the `language_id` column. I don't believe there's something that can be done about it with just data cleaning and transformation, so I'm going to drop it.
 
 ## [Data Cleaning 🧹](#data-cleaning-)
 

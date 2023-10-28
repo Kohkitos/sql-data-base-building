@@ -19,38 +19,39 @@ from passwords import ENGINE
 
 
 # SQL functions
-def add_table(table):
+def add_table(name):
+    
     '''
-    This function adds a dataframe to the database the cursor is pointing as a table, setting the {name}_id as the primary key.
+    This function adds a dataframe to the database the variable `CURSOR` is pointing as a table, setting the {name}_id as the primary key.
     
     Argument:
         table(pd.DataFrame): a dataframe with a {name}_id which will be the primary key.
 
     Returns:
         0: No errors during execution.
-        1: There is not a .csv with the table name.
+        1: There is not a .csv with the name `name`.
         2: there is not a {name}_id column in the dataframe.
     '''
     
     try:
-        df = pd.read_csv(f'../data/{table}.csv')
+        df = pd.read_csv(f'../data/{name}.csv')
 
     except:
-        print(f"Error: couldn't find {table}.csv in ../data/")
+        print(f"Error: couldn't find {name}.csv in ../data/")
         return (1)
     
-    if f'{table}_id' not in df.columns:
-        print(f"Error: {table}_id not in dataframe")
+    if f'{name}_id' not in df.columns:
+        print(f"Error: {name}_id not in dataframe")
         return (2)
 
-    df.to_sql(name=f'{table}',
+    df.to_sql(name=f'{name}',
             con=CURSOR,
             if_exists='append',
             index=False
            )
 
     with CURSOR.connect() as con:
-        con.execute(f'ALTER TABLE `{table}` ADD PRIMARY KEY (`{table}_id`);')
+        con.execute(f'ALTER TABLE `{name}` ADD PRIMARY KEY (`{name}_id`);')
 
     print("Table created succesfully")
     print('-'*15)
