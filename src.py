@@ -44,6 +44,14 @@ def add_table(name):
         print(f"Error: {name}_id not in dataframe")
         return (2)
 
+    # Downcasting so that we have smallint and floats instead of bigint and doubles
+    
+    for c in df.select_dtypes(include='float'):
+        df[c] = pd.to_numeric(df[c], downcast='float')
+        
+    for c in df.select_dtypes('integer'):
+        df[c] = pd.to_numeric(df[c], downcast='integer')
+    
     df.to_sql(name=f'{name}',
             con=CURSOR,
             if_exists='append',
