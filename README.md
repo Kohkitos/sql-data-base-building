@@ -26,6 +26,7 @@ Deli says that he has recover some Blockbuster's data from back in the day and h
 + `img`: folder with the images used in the readme.
 + `notebooks`: all the notebooks used in the project.
 + `data`: all the .csv cleaned.
++ `sql-scripts`: all the .sql scripts.
 
 **This readme only contains the conclussions, the process is explained in the notebooks**
 
