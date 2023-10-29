@@ -97,6 +97,32 @@ LIMIT 1;
 
 -- 6.I'm planning to add a new store in Ávila. It would be called Blockbuster Love, it will be in Ávila, Ávila, the contact phone would be +34 654 486 124, we don't have a mail yet and the warehouse can only have 500 movies as well, so we can take the overbooking inventory from my house to the new store, so assgin new values to the inventory so that half of the films go to the new store.
 
+INSERT INTO store (store_id, name, location, contact_phone, warehouse_capacity)
+VALUES (
+    2,
+    'Blockbuster Love',
+    'Ávila, Ávila',
+    '+34 654 486 124',
+    '500'
+);
+
+CREATE TEMPORARY TABLE temp_inventory AS
+SELECT inventory_id
+FROM inventory
+ORDER BY RAND();
+
+UPDATE inventory AS i
+        JOIN
+    temp_inventory AS t ON i.inventory_id = t.inventory_id 
+SET 
+    i.store_id = CASE
+        WHEN t.inventory_id % 2 = 0 THEN 1
+        ELSE 2
+    END;
+
+
+DROP TEMPORARY TABLE temp_inventory;
+
 -- 7. Carlito is such a good client I was planning on gifting him his favourite drama movie, can you look for the top 5 drama movies he has rented the most?
 
 SELECT 
@@ -129,4 +155,14 @@ FROM
 GROUP BY c.customer_id
 ORDER BY Rentals DESC
 LIMIT 3;
+
+-- 9. I tried to call Carlito but he doesn't pick up the phone. Remove his phone from the database, he should have had time to answer me, so he might have changed his number, right?
+
+UPDATE customer 
+SET 
+    phone_number = NULL
+WHERE
+    customer_id = 5;
+    
+-- 10. I recently had to pay a fine because they thought I was stalking one of our clients, weird, right? I need to sell some of our inventory, so make a list of our 20 less rented movies and how many copies of them we have in our inventory. Also group them by store so that I know how many of them I can remove from each store without leaving none to them.
 
