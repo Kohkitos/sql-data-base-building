@@ -81,3 +81,39 @@ GROUP BY f.category
 ORDER BY Rental DESC;
 
 -- 5. In which day did Carlito rent the most amount of movies? Display only his beautiful name, the day and the number of movies he rented.
+
+-- 6.I'm planning to add a new store in Ávila. It would be called Blockbuster Love, it will be in Ávila, Ávila, the contact phone would be +34 654 486 124, we don't have a mail yet and the warehouse can only have 500 movies as well, so we can take the overbooking inventory from my house to the new store, so assgin new values to the inventory so that half of the films go to the new store.
+
+-- 7. Carlito is such a good client I was planning on gifting him his favourite drama movie, can you look for the top 5 drama movies he has rented the most?
+
+SELECT 
+    f.title AS Film, COUNT(*) AS 'Rental Count'
+FROM
+    customer AS c
+        INNER JOIN
+    rental AS r ON c.customer_id = r.customer_id
+        INNER JOIN
+    inventory AS i ON r.inventory_id = i.inventory_id
+        INNER JOIN
+    film AS f ON i.film_id = f.film_id
+WHERE
+    c.first_name = 'Carlito'
+        AND f.category = 'Drama'
+GROUP BY f.film_id , f.title
+ORDER BY 'Rental Count' DESC
+LIMIT 5;
+
+-- 8. I think only gifting something to Carlito might be weird, can you show our top 3 clients who have rented the most amount of movies and their location so that I can send a 'thank you' basket to their houses?
+
+SELECT 
+    CONCAT(c.first_name, ' ', c.last_name) AS Customer,
+    c.location AS Address,
+    COUNT(r.rental_id) AS Rentals
+FROM
+    customer AS c
+        INNER JOIN
+    rental AS r ON c.customer_id = r.customer_id
+GROUP BY c.customer_id
+ORDER BY Rentals DESC
+LIMIT 3;
+
