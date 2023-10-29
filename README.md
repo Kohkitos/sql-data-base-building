@@ -58,7 +58,7 @@ I did a general cleaning of all of the tables mentioned before and then I modifi
 
 The database created was the following:
 
-![database](https://github.com/Kohkitos/sql-data-base-building/blob/main/img/database.jpg)
+![database](https://github.com/Kohkitos/sql-data-base-building/blob/main/img/better_database.png)
 
 ## [Filling with dummy values 🤖](#filling-with-dummy-values-)
 
