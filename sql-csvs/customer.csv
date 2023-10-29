@@ -1,0 +1,51 @@
+customer_id,first_name,last_name,email,phone_number,gender,location
+1,Carina,"Puga Nicolau",carina.puga@belda-iglesia.com,"+34 564 229 45",female,"Vial Augusto Palacio 49 Puerta 3 
+Vizcaya, 37278"
+2,Nazario,"Moll Carlos",nazario.moll@vilar.org,"+34 288 171 83",male,"Calle de Federico Osuna 81 Puerta 1 
+Ourense, 23295"
+3,Osvaldo,"Villalonga Gallo",osvaldo.villalonga@sanz.com,"+34 757 810 66",male,"Acceso de Vidal Torrijos 98
+Santa Cruz de Tenerife, 01405"
+4,Faustino,"Molina Luque",faustino.molina@uriarte-gallart.com,"+34 850 328 06",male,"C. de Sol Morante 85
+Navarra, 13633"
+5,Carlito,"Almazán Castañeda",carlito.almazán@cabo.org,"+34 850 279 11",male,"Pasaje de Federico Anglada 30
+Ávila, 13980"
+6,Esperanza,"Rivera Ferrando",esperanza.rivera@benet.com,"+34 777 320 20",female,"Via de René Girón 216 Puerta 3 
+Toledo, 30642"
+7,Casemiro,"Gallart Almazán",casemiro.gallart@pujol.es,"+34 156 020 95",male,"Rambla de Chelo Peñas 93 Puerta 5 
+Álava, 18425"
+8,Esteban,"Lastra Marín",esteban.lastra@manrique.org,"+34 269 654 03",male,"Alameda Amor Río 874 Piso 7 
+Álava, 36857"
+9,Cayetano,"Fuentes Echeverría",cayetano.fuentes@alvarez.com,"+34 737 535 15",non-binary,"Urbanización de Godofredo Barrera 88 Apt. 31 
+Navarra, 18999"
+10,Glauco,"Giralt Pérez",glauco.giralt@estevez.es,"+34 853 406 01",male,"Cañada de Adriana Ibañez 47
+Zamora, 03005"
+11,Elisa,"Piña Cornejo",elisa.piña@rosell-lerma.com,"+34 772 136 82",female,"Acceso Rosa Valderrama 5 Apt. 43 
+Tarragona, 16454"
+12,Tamara,"Barrera Alfaro",tamara.barrera@pavon.net,"+34 773 792 92",non-binary,"Cuesta Nadia Agustín 97 Apt. 22 
+Ávila, 49164"
+13,Jeremías,"Ricart Pont",jeremías.ricart@domingo-valera.com,"+34 429 505 27",non-binary,"Glorieta de Albina Pineda 121 Piso 1 
+Santa Cruz de Tenerife, 02760"
+14,Sigfrido,"Tapia Gutiérrez",sigfrido.tapia@agusti.com,"+34 470 969 76",male,"Cañada de Zaida Aznar 74 Puerta 2 
+Castellón, 29821"
+15,Buenaventura,"Leal Escalona",buenaventura.leal@aguilera.es,"+34 009 022 08",non-binary,"Pasadizo de Petrona Fabregat 92
+Navarra, 08097"
+16,Duilio,"Rocamora Osuna",duilio.rocamora@ferrero.com,"+34 026 388 85",male,"Paseo Porfirio Noguera 18
+Albacete, 43504"
+17,Carmelita,"Álvaro Clavero",carmelita.álvaro@palomar-amigo.es,"+34 460 289 95",non-binary,"Plaza Marianela Vizcaíno 443 Piso 9 
+Granada, 15407"
+18,Guillermo,"Torralba Buendía",guillermo.torralba@pi.com,"+34 033 632 68",male,"Cuesta de Saturnino Pina 701 Apt. 69 
+Huelva, 01674"
+19,Gilberto,"Casanova Artigas",gilberto.casanova@perera.com,"+34 828 662 36",male,"Pasaje Valero Girona 84
+Tarragona, 48899"
+20,Leyre,"Laguna Haro",leyre.laguna@camino-pons.net,"+34 798 860 80",female,"Glorieta de Pía Torrecilla 971 Puerta 9 
+Navarra, 03646"
+21,Nayara,"Castejón Barba",nayara.castejón@vina.org,"+34 272 476 69",female,"Cuesta de Rosa Palomo 40
+Burgos, 04154"
+22,Águeda,"Casanovas Pareja",águeda.casanovas@galvan.es,"+34 748 223 52",non-binary,"Rambla Silvio Quintanilla 72 Piso 8 
+Cáceres, 15153"
+23,Melisa,"Carrillo Canals",melisa.carrillo@alsina-lobo.es,"+34 225 180 04",female,"Callejón Augusto Villalobos 67
+Albacete, 49332"
+24,Josefina,"Sevilla Llanos",josefina.sevilla@roig-exposito.es,"+34 830 408 26",non-binary,"Camino de Cleto Vazquez 180 Puerta 6 
+Teruel, 32266"
+25,Severino,"Llopis Alemán",severino.llopis@zamora-baena.com,"+34 716 693 85",male,"Plaza de Glauco Montenegro 30
+Vizcaya, 32882"
