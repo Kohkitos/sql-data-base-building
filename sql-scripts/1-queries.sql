@@ -82,6 +82,19 @@ ORDER BY Rental DESC;
 
 -- 5. In which day did Carlito rent the most amount of movies? Display only his beautiful name, the day and the number of movies he rented.
 
+SELECT 
+	concat(c.first_name, ' ', c.last_name) as Costumer, 
+    COUNT(*) AS Rentals,
+    DAY(r.rental_date) AS 'Rental Day'
+FROM
+	rental AS r
+INNER JOIN customer AS c ON c.customer_id = r.customer_id
+WHERE
+	c.customer_id = 5
+GROUP BY `Rental Day`
+ORDER BY rentals DESC
+LIMIT 1;
+
 -- 6.I'm planning to add a new store in Ávila. It would be called Blockbuster Love, it will be in Ávila, Ávila, the contact phone would be +34 654 486 124, we don't have a mail yet and the warehouse can only have 500 movies as well, so we can take the overbooking inventory from my house to the new store, so assgin new values to the inventory so that half of the films go to the new store.
 
 -- 7. Carlito is such a good client I was planning on gifting him his favourite drama movie, can you look for the top 5 drama movies he has rented the most?
