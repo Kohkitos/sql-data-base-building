@@ -131,7 +131,7 @@ CREATE TABLE IF NOT EXISTS `blockbuster`.`rental` (
   `rental_date` DATE NULL DEFAULT NULL,
   `inventory_id` SMALLINT NULL DEFAULT NULL,
   `customer_id` SMALLINT NULL DEFAULT NULL,
-  `return_date` VARCHAR(10) NULL DEFAULT NULL,
+  `return_date` DATE NULL DEFAULT NULL,
   PRIMARY KEY (`rental_id`),
   INDEX `FK_Rental_Inventory` (`inventory_id` ASC) VISIBLE,
   INDEX `FK_Rental_Customer` (`customer_id` ASC) VISIBLE,
