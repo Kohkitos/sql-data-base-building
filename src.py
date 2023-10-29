@@ -64,3 +64,29 @@ def add_table(name):
     print("Table created succesfully")
     print('-'*15)
     return (0)
+
+
+# Formatting functions
+def format_phone_number(phone):
+    
+    '''
+    Returns the phone number introduced to the standar Spanish format "+34 XXX XXX XXX".
+    
+    Arguments:
+        phone: a string of a phone number with or without '+' and with or without 34 at the beggining (it will be added if it doesn't have it).
+                
+                If the string is not digit, the function will not register it as an error and will return unexpected values.
+        
+    Returns:
+        formatted_phone: a string with the formatted phone like this "+34 XXX XXX XXX"
+    '''
+
+    phone = ''.join(filter(str.isdigit, phone))
+
+    if not phone.startswith('34'):
+        phone = '34' + phone
+
+
+    formatted_phone = f'+34 {phone[3:6]} {phone[6:9]} {phone[9:13]}'
+
+    return formatted_phone
