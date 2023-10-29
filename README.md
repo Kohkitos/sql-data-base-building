@@ -15,7 +15,7 @@ Iron Hack's week 3 project.
 
 ## [Introduction 🎞](#introduction-)
 
-A man named Deli Ushion, in 2023 A.D., has decided to re-open Blockbuster. This is not a great idea, but he's paying us, so we have to obey.
+A man named Deli Ushion, in 2023 A.D., has decided to re-open Blockbuster as a self-service automatic movie rental store without staff. This is not a great idea, but he's paying us, so we have to obey.
 
 Deli says that he has recover some Blockbuster's data from back in the day and he wants us to clean the data and export it into a database. He's no programmer so he's trusting our criteria as long as it is a SQL database (his brother-in-law, Manuel, told him about it and he believes is the next big thing).
 
