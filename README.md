@@ -11,6 +11,7 @@ Iron Hack's week 3 project.
 1. [Data Exploration 🔍](#data-exploration-)
 1. [Data Cleaning 🧹](#data-cleaning-)
 1. [Building a Database 👷‍♂️](#building-a-database-)
+1. [Filling with dummy values 🤖](#filling-with-dummy-values-)
 
 
 ## [Introduction 🎞](#introduction-)
@@ -22,10 +23,10 @@ Deli says that he has recover some Blockbuster's data from back in the day and h
 
 ## [Contents](#contents)
 
-+ `src`: a hidden directory with the source database.
++ `data`: all the .csv cleaned.
 + `img`: folder with the images used in the readme.
 + `notebooks`: all the notebooks used in the project.
-+ `data`: all the .csv cleaned.
++ `sql-csvs`: csvs with dummy data for `customer` and `rental` table.
 + `sql-scripts`: all the .sql scripts.
 
 **This readme only contains the conclussions, the process is explained in the notebooks**
@@ -58,3 +59,7 @@ I did a general cleaning of all of the tables mentioned before and then I modifi
 The database created was the following:
 
 ![database](https://github.com/Kohkitos/sql-data-base-building/blob/main/img/database.jpg)
+
+## [Filling with dummy values 🤖](#filling-with-dummy-values-)
+
+In order to make queries more interesting, I filled `customer` with fake data using the `Faker` library, and I modified the original `rental.csv` so that the dates are from 2023 and the ids match with the tables created in the previous section and with the newly created `customer` table.
