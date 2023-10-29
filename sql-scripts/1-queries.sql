@@ -164,5 +164,18 @@ SET
 WHERE
     customer_id = 5;
     
--- 10. I recently had to pay a fine because they thought I was stalking one of our clients, weird, right? I need to sell some of our inventory, so make a list of our 20 less rented movies and how many copies of them we have in our inventory. Also group them by store so that I know how many of them I can remove from each store without leaving none to them.
+-- 10. I recently had to pay a fine because they thought I was stalking one of our clients. Weird, right? I need to sell some of our inventory, so make a list of our 20 less rented movies and how many copies of them we have in our inventory. Also group them by store so that I know how many of them I can remove from each store without leaving none to them.
 
+SELECT 
+    f.title AS movie_title,
+    i.store_id,
+    COUNT(i.inventory_id) AS inventory_count
+FROM
+    film AS f
+        INNER JOIN
+    inventory AS i ON f.film_id = i.film_id
+        LEFT JOIN
+    rental AS r ON i.inventory_id = r.inventory_id
+GROUP BY f.title , i.store_id
+ORDER BY COUNT(r.inventory_id) ASC
+LIMIT 20;
