@@ -64,3 +64,20 @@ FROM
 WHERE
     c.customer_id = 5
 LIMIT 1;
+
+-- 4. I need a table with the most rented categories during the 26th.
+
+SELECT 
+    f.category, COUNT(*) AS Rental
+FROM
+    rental AS r
+        INNER JOIN
+    inventory AS i ON i.inventory_id = r.inventory_id
+        INNER JOIN
+    film AS f ON f.film_id = i.film_id
+WHERE
+    DAY(r.rental_date) = 26
+GROUP BY f.category
+ORDER BY Rental DESC;
+
+-- 5. In which day did Carlito rent the most amount of movies? Display only his beautiful name, the day and the number of movies he rented.
