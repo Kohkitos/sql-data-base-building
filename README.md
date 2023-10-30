@@ -12,6 +12,7 @@ Iron Hack's week 3 project.
 1. [Data Cleaning 🧹](#data-cleaning-)
 1. [Building a Database 👷‍♂️](#building-a-database-)
 1. [Filling with dummy values 🤖](#filling-with-dummy-values-)
+1. [Queries ☝🤓](#queries-)
 
 
 ## [Introduction 🎞](#introduction-)
@@ -63,3 +64,11 @@ The database created was the following:
 ## [Filling with dummy values 🤖](#filling-with-dummy-values-)
 
 In order to make queries more interesting, I filled `customer` with fake data using the `Faker` library, and I modified the original `rental.csv` so that the dates are from 2023 and the ids match with the tables created in the previous section and with the newly created `customer` table.
+
+## [Queries ☝🤓](#queries-)
+
+Deli asked some questions about the store one month after the grand opening and it's surprisingly not going bad.
+
+With the previous dummy values and the cleaned ones, I challenged myself doing queries that I didn't get how to do it.
+
+## [Conclusion🤠](#conclusion-)
