@@ -28,10 +28,7 @@ def add_table(name):
         table(pd.DataFrame): a dataframe with a {name}_id which will be the primary key.
 
     Returns:
-        0: No errors during execution.
-        1: There is not a .csv with the name `name`.
-        2: there is not a {name}_id column in the dataframe.
-        3: unexpected error.
+        int: process code.
     '''
     try:
         try:
@@ -81,9 +78,8 @@ def format_phone_number(phone):
         phone: a string of a phone number with or without '+' and with or without 34 at the beggining (it will be added if it doesn't have it).
         
     Returns:
-        formatted_phone: a string with the formatted phone like this "+34 XXX XXX XXX"
-        1: string too short.
-        2: unexpected error:
+        string: a string formatted "+34 XXX XXX XXX".
+        int: error code.
     '''
     try:
 
