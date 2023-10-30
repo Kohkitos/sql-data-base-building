@@ -155,7 +155,6 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `blockbuster`;
-INSERT INTO `blockbuster`.`actor` (`actor_id`, `first_name`, `last_name`) VALUES (actor_id, 'first_name', 'last_name');
 INSERT INTO `blockbuster`.`actor` (`actor_id`, `first_name`, `last_name`) VALUES (1, 'PENELOPE', 'GUINESS');
 INSERT INTO `blockbuster`.`actor` (`actor_id`, `first_name`, `last_name`) VALUES (2, 'NICK', 'WAHLBERG');
 INSERT INTO `blockbuster`.`actor` (`actor_id`, `first_name`, `last_name`) VALUES (3, 'ED', 'CHASE');
@@ -365,7 +364,6 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `blockbuster`;
-INSERT INTO `blockbuster`.`film` (`film_id`, `title`, `description`, `release_year`, `rental_days`, `length`, `replacement_cost`, `rating`, `special_features`, `category`) VALUES (film_id, 'title', 'description', release_year, rental_days, length, replacement_cost, 'rating', 'special_features', 'category');
 INSERT INTO `blockbuster`.`film` (`film_id`, `title`, `description`, `release_year`, `rental_days`, `length`, `replacement_cost`, `rating`, `special_features`, `category`) VALUES (1, 'ACADEMY DINOSAUR', 'A Epic Drama of a Feminist And a Mad Scientist who must Battle a Teacher in The Canadian Rockies', 2006, 6, 86, 20.99, 'PG', 'Deleted Scenes,Behind the Scenes', 'Documentary');
 INSERT INTO `blockbuster`.`film` (`film_id`, `title`, `description`, `release_year`, `rental_days`, `length`, `replacement_cost`, `rating`, `special_features`, `category`) VALUES (2, 'ACE GOLDFINGER', 'A Astounding Epistle of a Database Administrator And a Explorer who must Find a Car in Ancient China', 2006, 3, 48, 12.99, 'G', 'Trailers,Deleted Scenes', 'Horror');
 INSERT INTO `blockbuster`.`film` (`film_id`, `title`, `description`, `release_year`, `rental_days`, `length`, `replacement_cost`, `rating`, `special_features`, `category`) VALUES (3, 'ADAPTATION HOLES', 'A Astounding Reflection of a Lumberjack And a Car who must Sink a Lumberjack in A Baloon Factory', 2006, 7, 50, 18.99, 'NC-17', 'Trailers,Deleted Scenes', 'Documentary');
@@ -1375,7 +1373,6 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `blockbuster`;
-INSERT INTO `blockbuster`.`actor_film` (`actor_id`, `film_id`) VALUES (actor_id, film_id);
 INSERT INTO `blockbuster`.`actor_film` (`actor_id`, `film_id`) VALUES (1, 1);
 INSERT INTO `blockbuster`.`actor_film` (`actor_id`, `film_id`) VALUES (1, 23);
 INSERT INTO `blockbuster`.`actor_film` (`actor_id`, `film_id`) VALUES (1, 25);
@@ -2395,7 +2392,6 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `blockbuster`;
-INSERT INTO `blockbuster`.`inventory` (`inventory_id`, `film_id`, `store_id`) VALUES (inventory_id, film_id, store_id);
 INSERT INTO `blockbuster`.`inventory` (`inventory_id`, `film_id`, `store_id`) VALUES (1, 1, 1);
 INSERT INTO `blockbuster`.`inventory` (`inventory_id`, `film_id`, `store_id`) VALUES (2, 1, 1);
 INSERT INTO `blockbuster`.`inventory` (`inventory_id`, `film_id`, `store_id`) VALUES (3, 1, 1);
