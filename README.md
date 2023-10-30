@@ -21,6 +21,8 @@ A man named Deli Ushion, in 2023 A.D., has decided to re-open Blockbuster as a s
 
 Deli says that he has recover some Blockbuster's data from back in the day and he wants us to clean the data and export it into a database. He's no programmer so he's trusting our criteria as long as it is a SQL database (his brother-in-law, Manuel, told him about it and he believes is the next big thing).
 
+**For real:** this is a project about testing our skills cleaning data, inserting that data into a database and solving queries.
+
 <a name="contents"/>
 ## Contents
 
@@ -77,5 +79,3 @@ In order to make queries more interesting, I filled `customer` with fake data us
 Deli asked some questions about the store one month after the grand opening and it's surprisingly not going bad.
 
 With the previous dummy values and the cleaned ones, I challenged myself doing queries that I didn't get how to do it.
-
-## Conclusion🤠
