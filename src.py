@@ -25,7 +25,7 @@ def add_table(name):
     This function adds a dataframe to the database the variable `CURSOR` is pointing as a table, setting the {name}_id as the primary key.
     
     Args:
-        table(pd.DataFrame): a dataframe with a {name}_id which will be the primary key.
+        str: the name of a csv to look for. The same name should be as one of the columns like this: name_id.
 
     Returns:
         int: process code.
