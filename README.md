@@ -65,7 +65,7 @@ I did a general cleaning of all of the tables mentioned before and then I modifi
 
 <a name="building"/>
 
-## Building a Database
+## Building a Database 👷‍♂️
 
 The database created was the following:
 
