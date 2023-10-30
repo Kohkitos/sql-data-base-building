@@ -5,24 +5,24 @@
 Iron Hack's week 3 project.
 
 ## Index
-1. [Introduction 🎞](#introduction-)
+1. [Introduction 🎞](#introduction)
 1. [Contents](#contents)
-1. [Problem Instructions 📝](#problem-instructions-)
-1. [Data Exploration 🔍](#data-exploration-)
-1. [Data Cleaning 🧹](#data-cleaning-)
-1. [Building a Database](#building)
-1. [Filling with dummy values 🤖](#filling-with-dummy-values-)
-1. [Queries ☝🤓](#queries-)
+1. [Problem Instructions 📝](#problem)
+1. [Data Exploration 🔍](#exploration)
+1. [Data Cleaning 🧹](#cleaning)
+1. [Building a Database👷](#building)
+1. [Filling with dummy values 🤖](#dummy)
+1. [Queries ☝🤓](#queries)
 
-
-## [Introduction 🎞](#introduction-)
+<a name="introduction"/>
+## Introduction 🎞
 
 A man named Deli Ushion, in 2023 A.D., has decided to re-open Blockbuster as a self-service automatic movie rental store without staff. This is not a great idea, but he's paying us, so we have to obey.
 
 Deli says that he has recover some Blockbuster's data from back in the day and he wants us to clean the data and export it into a database. He's no programmer so he's trusting our criteria as long as it is a SQL database (his brother-in-law, Manuel, told him about it and he believes is the next big thing).
 
-
-## [Contents](#contents)
+<a name="contents"/>
+## Contents
 
 + `data`: all the .csv cleaned.
 + `img`: folder with the images used in the readme.
@@ -32,7 +32,8 @@ Deli says that he has recover some Blockbuster's data from back in the day and h
 
 **This readme only contains the conclussions, the process is explained in the notebooks**
 
-## [Problem Instructions 📝](#problem-instructions-)
+<a name="problem"/>
+## Problem Instructions 📝
 
 The problem is divided into 4 parts and a bonus:
 
@@ -45,32 +46,36 @@ The problem is divided into 4 parts and a bonus:
 
 Let's get into it!
 
-## [Data Exploration 🔍](#data-exploration-)
+<a name="exploration"/>
+## Data Exploration 🔍
 
 The tables that are worth keeping for the SQL database are: `actor`, `film`, `inventory` and `rental`. `old_HDD`, when transformed, will help us relate `film`, `category` and `actor`.
 
 On the other side, `language` would have been useful if `film` had no repeated values in the `language_id` column. I don't believe there's something that can be done about it with just data cleaning and transformation, so I'm going to drop it.
 
-## [Data Cleaning 🧹](#data-cleaning-)
+<a name="cleaning"/>
+## Data Cleaning 🧹
 
 I did a general cleaning of all of the tables mentioned before and then I modified the old_HDD to be the `actor_film` table, serving as a many-to-many table for the two of them. I also used the `category` of that table to include it into the `film` table and have each film with its category.
 
 <a name="building"/>
 
-## [Building a Database ](#building)
+## Building a Database
 
 The database created was the following:
 
 ![database](https://github.com/Kohkitos/sql-data-base-building/blob/main/img/better_database.png)
 
-## [Filling with dummy values 🤖](#filling-with-dummy-values-)
+<a name="dummy"/>
+## Filling with dummy values 🤖
 
 In order to make queries more interesting, I filled `customer` with fake data using the `Faker` library, and I modified the original `rental.csv` so that the dates are from 2023 and the ids match with the tables created in the previous section and with the newly created `customer` table.
 
-## [Queries ☝🤓](#queries-)
+<a name="queries"/>
+## Queries ☝🤓
 
 Deli asked some questions about the store one month after the grand opening and it's surprisingly not going bad.
 
 With the previous dummy values and the cleaned ones, I challenged myself doing queries that I didn't get how to do it.
 
-## [Conclusion🤠](#conclusion-)
+## Conclusion🤠
